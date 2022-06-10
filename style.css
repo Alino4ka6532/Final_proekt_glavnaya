@@ -20,14 +20,13 @@ header img {
 header a{
     color: white;
     text-decoration: none;
-    box-shadow: 5px 0 5px 0 white;
+    box-shadow: 5px 0 2px 0 white;
     border-radius: 5px;
     padding: 5px;
+    background-color: rgb(97, 97, 97);
+    
 }
-header a:focus {
-    box-shadow: inset 5px 0 5px 0 white;
 
-}
 input {
     border-radius:  5px;
 }
@@ -35,9 +34,7 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: gray;
-}
-nav a {
-    color: honeydew;
+    
 }
 main img{
     width: 270px;
@@ -55,6 +52,10 @@ article a {
     font-size: 50px;
     text-align: center;
 }
+article a:hover {
+    text-decoration: double;
+    transition: 0.5s ease-in;
+}
 article{
     background-color: rgb(197, 197, 197);
     
@@ -62,4 +63,32 @@ article{
 article img{
     border-top: 5px solid #123EAB;
     border-bottom: 5px solid #123EAB;
+    opacity: 0.2;
+}
+footer {
+    background-image: linear-gradient(black, white, black);
+    padding: 5px;
+
+}
+main img:hover {
+    opacity: 1;
+    border: 6px solid navy;
+    transition: 0.5s ease-out;
+    padding: 5px;
+}
+main img {
+    opacity: 0.2;
+    border-top: 5px solid #123EAB;
+    border-bottom: 5px solid #123EAB;
+}
+.a:hover {
+    color: honeydew;
+    text-decoration: double;
+    transition: 0.5s ease-in;
+    transform: scale(2);
+}
+.poisk_registratia {
+    display: flex;
+    align-items: center;
+    margin: 10px;
 }
